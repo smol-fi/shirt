@@ -1,0 +1,263 @@
+html, body {
+	margin: 0;
+	background-color: #6A9C1D;
+}
+
+p, label, {
+	font-size: 1em;
+}
+
+input, select {
+	font-size: 0.75em;
+}
+
+#container {
+	transform: translate(-50%);
+	margin-left: 50%;
+	background-color: #fff;
+	border-radius: 15px;
+	height: 100%;
+	padding: 0 10px 0 10px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: greenyellow;
+	flex: 1 1;
+	padding: 20px 0 20px;
+	margin-top: 0;
+}
+
+#tosijees {
+	color: #555;
+	font-family: Verdana;
+	font-size: 1.5em;
+	font-weight: bold;
+	transform: translate(-50%);
+	margin-left: 50%;
+	text-align: center;
+}
+
+.contentrow {
+	margin-top: 20px;
+}
+	
+#shirtarea {
+	transform: translate(-50%);
+	margin-left: 50%;
+}
+
+#shirt {
+	display: inline-block;
+	height: auto;
+	width: 400px;
+	overflow: hidden;
+	background-size: cover;
+	transform: translate(-50%);
+	margin-left: 50%;
+	margin-top: 100px;
+}
+
+#text-container {
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	top: 200px;
+	transform: translate(50%);
+	text-align: center;
+	margin-top: 50px;
+	transform: translate(-50%);
+	margin-left: 50%;
+}
+
+#shirttext {
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+#colorbar {
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+	height: 25px;
+	top: 25vh;
+}
+
+.colorbars {
+	border: 1px solid black;
+	height: 25px;
+	width: 50px;
+	float: left;
+}
+
+#selectwhite {
+	background-color: white;
+}
+
+#selectblack {
+	background-color: black;
+}
+
+#selectdodgerblue {
+	background-color: dodgerblue;
+}
+
+#selectlightcoral {
+	background-color: lightcoral;
+}
+
+#selectdarkkhaki {
+	background-color: darkkhaki;
+}
+
+#customcolorbar {
+	width: 100%;
+	display: block;
+}
+
+label[for=patternmenu] {
+	margin-left: 40px;
+}
+
+#patternmenu {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.slidercont {
+	width: 100%;
+}
+
+.colorsliders {
+	display: flex;
+	width: 90%;
+}
+
+input[type=text], input[type=email], select, .sp-replacer {
+	border: 1px solid greenyellow;
+	border-radius: 4px;
+}
+
+.sliderlabel {
+	display: block;
+}
+
+/*
+// https://www.cssportal.com/style-input-range/
+// opted out support for microsoft internet explorer as it is deprecated
+*/
+
+	input[type=range]::-webkit-slider-runnable-track {
+	  height: 5px;
+	  cursor: pointer;
+	  box-shadow: 0px 0px 0px #000000;
+	  background: #ADFF2F;
+	  border-radius: 1px;
+	  border: 0px solid #000000;
+	}
+	input[type=range]::-webkit-slider-thumb {
+	  box-shadow: 0px 0px 0px #000000;
+	  border: 1px solid #6A9C1D;
+	  border-radius: 7px;
+	  background: #ADFF2F;
+	  cursor: pointer;
+	  -webkit-appearance: none;
+	  margin-top: -4px;
+	}
+	input[type=range]:focus::-webkit-slider-runnable-track {
+	  background: #ADFF2F;
+	}
+	input[type=range]::-moz-range-track {
+	  height: 5px;
+	  cursor: pointer;
+	  box-shadow: 0px 0px 0px #000000;
+	  background: #ADFF2F;
+	  border-radius: 1px;
+	  border: 0px solid #000000;
+	}
+	input[type=range]::-moz-range-thumb {
+	  box-shadow: 0px 0px 0px #000000;
+	  border: 1px solid #6A9C1D;
+	  border-radius: 7px;
+	  background: #ADFF2F;
+	  cursor: pointer;
+	  margin-top: -4px;
+	}
+	
+/*
+// end input generated type range style
+*/
+
+#text-input {
+	margin-left: 10px;
+}
+
+#sizeslider {
+	width: 90%;
+}
+
+#orderbutton {
+	margin-bottom: 20px;
+}
+
+#padding-bot {
+	height: 78px;
+	bottom: 0;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: greenyellow;
+	padding: 10px 0 10px;
+	bottom: 0;
+}
+
+#footer-text {
+	color: #555;
+	font-family: Verdana;
+	font-size: 1em;
+	font-weight: bold;
+	transform: translate(-50%);
+	margin-left: 50%;
+	text-align: center;
+}
+
+#not-supported {
+	display: none;
+	font-family: Verdana;
+	font-size: 2em;
+	width: 100%;
+	color: darkred;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin-left: 50vw;
+	margin-top: 50vh;
+}
+
+@media only screen and (max-width: 799px){
+	header {
+		padding: 10px 0 10px;
+		margin-bottom: 20px;
+	}
+	#tosijees {
+		font-size: 1em;
+	}
+	#container {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 337px){
+	#container {
+		display: none;
+	}
+	
+	#not-supported {
+		display: block;
+	}
+}
